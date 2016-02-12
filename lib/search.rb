@@ -18,6 +18,7 @@ class Search
       end
       id += 1
     end
+    binding.pry
     poster
   end
 end
