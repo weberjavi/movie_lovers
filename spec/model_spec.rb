@@ -2,6 +2,7 @@ require "rspec"
 require 'pry'
 require_relative "../lib/fake_movie.rb"
 require_relative "../lib/fake_search.rb"
+require_relative "../lib/search.rb"
 
 
 
@@ -53,6 +54,26 @@ imdb.add_movie(movie10)
 end
 
 RSpec.describe "Search" do
-  
+
+  # describe "#nine_movies_with_poster" do
+  #   it "returns an array with nine elements" do
+  #     expect(Search.new.nine_movies_with_poster("pokemon").size).to eq(9)
+  #   end
+  # end
+
+  # describe "#years" do
+  #   it "returns an array with movies release year" do
+  #     movies_posterd = Search.new.nine_movies_with_poster("pokemon")
+  #     expect(movies_posterd.years).to kind_of(Array)
+  #   end
+  # end
+
+  # describe "#years" do
+  #   it "exists" do
+  #     expect(Search.new.years).to eq("hello")
+  #   end
+  # end
+
+
 end
 

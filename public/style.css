@@ -1,0 +1,14 @@
+body{
+
+}
+.movies_container{
+	max-width: 80%;
+	margin: 0 auto;
+}
+.movies_container .movies{
+	width: 33%;
+	float: left;
+}
+img{
+	max-width: 100%;
+}
