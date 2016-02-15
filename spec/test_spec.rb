@@ -52,7 +52,4 @@ imdb.add_movie(movie10)
 
 end
 
-RSpec.describe "Search" do
-  
-end
 
