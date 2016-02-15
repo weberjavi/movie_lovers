@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>films quizz</title>
+	<link href='https://fonts.googleapis.com/css?family=Raleway:300' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+	<h1 class="question">Wich of this films has been released in <%= @random_year %></h1>
+	<ul class="movies_container">
+		<% @movies_list.each do |movie|%>
+			<li class="movies">
+				 <%if movie.year == @random_year %>
+				 <a href="/s/<%= movie.title %>">
+				 <% else %>
+				 <a href="/f/<%= movie.title %>">
+				 <% end %>
+				<img src="<%= movie.poster %>" alt="Poster of <%= movie.title %> <%= movie.year %>">
+				</a>
+			</li>
+		<% end %>
+	</ul>
+
+	<img src="<%= @one_movie %>" alt="">
+</body>
+</html>
